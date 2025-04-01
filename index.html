@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/assets/style/style.css">
+    <link rel="stylesheet" href="./src/assets/style/grid.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.7.1-web/fontawesome-free-6.7.1-web/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon 2.ico">
+    <link rel="stylesheet" href="./src/assets/style/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Layout web</title>       
+</head>
+<body>
+    <div class="app">
+        <header class="head" id="home">
+            <div class="header grid wide" >
+                <div class="row">
+                    <div class="col l-2 m-2 c-12">
+                        <div class="header__logo">
+                            <a href="" class="header__logo-link" data-target="home">
+                                <img class="header__logo-img" src="./src/assets/img/logo remove BG.png" alt="Logo thương hiệu">
+                            </a>
+                        </div>                        
+                    </div>
+                    <div class="col l-8 m-8 c-0">
+                        <div class="header__search">
+                            <div class="header__search-all">
+                                <input type="text" class="header__search-input"   id="input-1" placeholder="Tìm kiếm ...">
+                                <button class="header__search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class=" col l-2 m-2 c-0">
+                        <!-- <h3 class="header__login-heading"><i class="fa-solid fa-user"></i></h3> -->
+                        <div class="header__login">
+                            <ul class="header__login-list">
+                                <li class="header__login-item">
+                                    <a href="" class="header__login-link" id="Login-2"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+                                </li>
+                                <li class="header__login-item">
+                                    <a href="" class="header__login-link" id="SignUp">Đăng ký</a>
+                                </li>
+                            </ul>    
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </header>
+        <main class="main">           
+            <div class="container grid wide">
+                <div class="row">
+                    <div class="col l-2 m-0 c-0">
+                        <nav class="main__navbar">
+                            <ul class="main__navbar-list">
+                                <li class="main__navbar-items">
+                                    <a href="" class="main__navbar-items-link" onclick="goBack(-10000)"><i class="fa-solid fa-house-chimney main__navbar-items-icon"></i> Trang chủ</a>
+                                </li>
+                                <li class="main__navbar-items">
+                                    <a href="" class="main__navbar-items-link"><i class="fa-solid fa-magnifying-glass main__navbar-items-icon"></i> Tìm kiếm</a>
+                                </li>
+                                <li class="main__navbar-items">
+                                    <a href="" class="main__navbar-items-link"><i class="fa-regular fa-comment main__navbar-items-icon"></i> Xem đánh giá</a>
+                                </li>
+                                <li class="main__navbar-items">
+                                    <a href="" class="main__navbar-items-link"><i class="fa-solid fa-utensils"></i> Mua đặc sản</a>
+                                </li>
+                                <li class="main__navbar-items">
+                                    <a href="" class="main__navbar-items-link"><i class="fa-solid fa-question main__navbar-items-icon"></i> Khác</a>
+                                </li>                             
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col l-6 m-8 c-12">
+                        <div class="row">
+                            <div class="col l-12 m-12 c-12">
+                                <a href="#"  class="card">
+                                    <div class="card__img" style="background-image: url(./src/assets/img/dac\ san.webp);"></div>
+                                    <div class="card__content">
+                                        <div class="card__info">
+                                            <h2 class="card__info-heading">Top 10 Đặc sản Lạng Sơn</h2>                                                     
+                                        </div>
+                                        <div class="card__more">
+                                            <span class="card__more-span"><i class="fa-solid fa-location-dot"></i> Lạng sơn</span>
+                                            
+                                            <div class="card__more-child">
+                                                <span class="card__more-child-span"><i class="fa-regular fa-heart"></i></span>
+
+                                                <!-- modify tim bai viet -->
+                                                <!-- <span class="card__more-child-span card__more-child--active"><i class="fa-solid fa-heart"></i></span> -->
+    
+                                                <span class="card__more-child-span"><i class="fa-regular fa-comment"></i></span>
+                                                <span class="card__more-child-span"><i class="fa-regular fa-share-from-square"></i></span>
+
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <a href="#"  class="card">
+                                    <div class="card__img" style="background-image: url(./src/assets/img/lễ\ hội\ tả\ phủ\ 2.jpg);"></div>
+                                    <div class="card__content">
+                                        <div class="card__info">
+                                            <h2 class="card__info-heading">Top 12 Lễ hội Lạng Sơn truyền thống nổi tiếng bậc nhất xứ Lạng</h2>
+                                            
+                                        </div>
+                                        <div class="card__more">
+                                            <span class="card__more-span"><i class="fa-solid fa-location-dot"></i> Lạng sơn</span>
+                                            
+                                            <div class="card__more-child">
+                                                <span class="card__more-child-span"><i class="fa-regular fa-heart"></i></span>
+
+                                                <!-- modify tim bai viet -->
+                                                <!-- <span class="card__more-child-span card__more-child--active"><i class="fa-solid fa-heart"></i></span> -->
+    
+                                                <span class="card__more-child-span"><i class="fa-regular fa-comment"></i></span>
+                                                <span class="card__more-child-span"><i class="fa-regular fa-share-from-square"></i></span>
+
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <a href="#"  class="card">
+                                    <div class="card__img" style="background-image: url(./src/assets/img/den\ chua.jpg);"></div>
+                                    <div class="card__content">
+                                        <div class="card__info">
+                                            <h2 class="card__info-heading">Top 10 ngôi đền chùa linh thiêng Lạng Sơn</h2>
+                                            
+                                        </div>
+                                        <div class="card__more">
+                                            <span class="card__more-span"><i class="fa-solid fa-location-dot"></i> Lạng sơn</span>
+                                            
+                                            <div class="card__more-child">
+                                                <span class="card__more-child-span"><i class="fa-regular fa-heart"></i></span>
+
+                                                <!-- modify tim bai viet -->
+                                                <!-- <span class="card__more-child-span card__more-child--active"><i class="fa-solid fa-heart"></i></span> -->
+    
+                                                <span class="card__more-child-span"><i class="fa-regular fa-comment"></i></span>
+                                                <span class="card__more-child-span"><i class="fa-regular fa-share-from-square"></i></span>
+
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </div>         
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4">
+                        <!-- recomment 1 -->
+                        <div class="main__plan">
+                            <h3 class="main__plan-heading">Tìm địa điểm nghỉ chân và ăn uống</h3>
+                            <ul class="main__plan-list">
+                                <li class="main__plan-items">
+                                    <a href="" class="main__plan-items-link">
+                                        <div class="main__plan-left">
+                                            <img src="src/assets/img/home.jpg" alt="" class="main__plan-img">
+                                        </div>
+                                        <div class="main__plan-right">
+                                            <h4 class="main__plan-right-heading">Nhà Nghỉ Phong long</h4>
+                                            <p class="main__plan-right-info">Địa chỉ: Số 2x/x Đường Bà Triệu, Lạng Sơn</p>
+                                        </div>
+                                    </a>                                   
+                                </li>
+                                <li class="main__plan-items">
+                                    <a href="" class="main__plan-items-link">
+                                        <div class="main__plan-left">
+                                            <img src="src/assets/img/home.jpg" alt="" class="main__plan-img">
+                                        </div>
+                                        <div class="main__plan-right">
+                                            <h4 class="main__plan-right-heading">Nhà Nghỉ Ngọc Trân</h4>
+                                            <p class="main__plan-right-info">Địa chỉ: Số 127/x Đường Trần Đăng Ninh, Lạng Sơn</p>
+                                        </div>
+                                    </a>                                   
+                                </li>
+                                <li class="main__plan-items">
+                                    <a href="" class="main__plan-items-link">
+                                        <div class="main__plan-left">
+                                            <img src="src/assets/img/home.jpg" alt="" class="main__plan-img">
+                                        </div>
+                                        <div class="main__plan-right">
+                                            <h4 class="main__plan-right-heading">Nhà Hàng Linh dẩn</h4>
+                                            <p class="main__plan-right-info">Địa chỉ: Đường Lê Hồng Phong, Tam Thanh, Lạng Sơn</p>
+                                        </div>
+                                    </a>                                   
+                                </li>
+                                <li class="main__plan-items">
+                                    <a href="" class="main__plan-items-link">
+                                        <div class="main__plan-left">
+                                            <img src="src/assets/img/home.jpg" alt="" class="main__plan-img">
+                                        </div>
+                                        <div class="main__plan-right">
+                                            <h4 class="main__plan-right-heading">Vịt quay Hải Xồm</h4>
+                                            <p class="main__plan-right-info">Địa chỉ: Số 512 Đường Bà Triệu, Lạng Sơn</p>
+                                        </div>
+                                    </a>                                   
+                                </li>
+                                <li class="main__plan-items">
+                                    <a href="" class="main__plan-items-link">
+                                        <div class="main__plan-left">
+                                            <img src="src/assets/img/home.jpg" alt="" class="main__plan-img">
+                                        </div>
+                                        <div class="main__plan-right">
+                                            <h4 class="main__plan-right-heading">Chợ Giếng vuông</h4>
+                                            <p class="main__plan-right-info">Địa chỉ: Đường................</p>
+                                        </div>
+                                    </a>                                   
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <!-- Quảng cáo măng ớt lạng sơn -->
+                        <a class="main-notification" href="https://xosoquangbinh.vn/2025-03-02-i88" target="_blank">
+                            <span class="main-notification-stop" ><i class="fa-solid fa-circle-xmark"></i></span>
+                            <img src="src/assets/img/mang ot ls.png" alt="" class="main-notification__img">
+                            <div class="main-notification-info">
+                                <p class="main-notification-info__parag">Măng ớt Lạng sơn</p>
+                                <p class="main-notification-info-span">Mua Ngay</p>
+                            </div>
+                        </a>
+
+
+                        <!-- recomment 2 -->                        
+                        <div class="main__plan">
+                            <h3 class="main__plan-heading">Thông tin nổi bật khác</h3>
+                            <ul class="main__plan-list">
+                                <li class="main__plan-items">
+                                    <a href="" class="main__plan-items-link">
+                                        <div class="main__plan-left">
+                                            <img src="src/assets/img/home.jpg" alt="" class="main__plan-img">
+                                        </div>
+                                        <div class="main__plan-right">
+                                            <h4 class="main__plan-right-heading">Khai trương phố đi bộ Đồng Đăng,Huyện Cao Lộc</h4>
+                                            <p class="main__plan-right-info">Với mục tiêu tạo ra một sản phẩm du lịch đặc sắc, mang đậm bản sắc văn hóa địa phương, dự án phố đi bộ Đồng Đăng đang được huyện Cao Lộc,
+                                                 tỉnh Lạng Sơn tích cực triển khai. Dự án này sẽ kết hợp hài hòa giữa yếu tố tâm linh của đền Mẫu Đồng Đăng,
+                                                 sự sôi động của chợ Đồng Đăng và vị trí thuận lợi của thị trấn, hứa hẹn trở thành một điểm đến hấp dẫn, thu hút đông đảo du khách.</p>
+                                        </div>
+                                    </a>                                   
+                                </li>
+                                <li class="main__plan-items">
+                                    <a href="" class="main__plan-items-link">
+                                        <div class="main__plan-left">
+                                            <img src="src/assets/img/home.jpg" alt="" class="main__plan-img">
+                                        </div>
+                                        <div class="main__plan-right">
+                                            <h4 class="main__plan-right-heading">Lễ Hội tả phủ đón hơn 1 triệu lượt khách</h4>
+                                            <p class="main__plan-right-info">Vừa qua theo thông kê thì lượng khách du lịch đến chơi hội tả phủ lên tới 1.231.564 triệu khách du lịch.
+                                                 Mang về lợi nhuận lên đến gần 4.3 tỷ đồng</p>
+                                        </div>
+                                    </a>                                   
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__contact grid wide">
+                <div class="row">
+                    <div class="col l-4 m-4 c-12 ">
+                        <ul class="footer__list">
+                            <li class="footer__items">
+                                <a href="" class="footer__items-link">Đăng ký tour Du Lịch</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items-link">Tìm hiểu về tour</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items-link">Liên hệ</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items-link">Báo lỗi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <ul class="footer__list">
+                            <li class="footer__items">
+                                <a href="" class="footer__items-link" id="Login-1">Đăng nhập</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items-link">Đăng ký</a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items-link">Điều khoản và dịch vụ</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <ul class="footer__list-icon">
+                            <li class="footer__items-icon">                              
+                                <a href="" class="footer__items-link-icon"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items-link-icon"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items-link-icon"><i class="fa-brands fa-tiktok "></i></a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items-link-icon"><i class="fa-solid fa-phone "></i></a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="" class="footer__items-link-icon"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+           <p class="footer__copyRight"><span>&copy;2025</span> Bản quyền thuộc về CD23Tin18</p>
+        </footer>
+
+    </div>
+
+
+     <div class="modal remove">
+        <div class="modal__layer remove" onclick="removeModal()"></div>
+        <div class="modal__body remove">
+            <div class="modal__login remove" >
+                <div class="auth-form">
+                    <form action="" id="from-1">
+                        <div class="modal__login-header">
+                            <h2 class="modal__login-header">Đăng nhập vào W</h2>
+                        </div>
+                        <div class="modal__login-main">
+                            <label for="" class="modal__login-main-lbl">Nhập tên đăng nhập</label>
+                            <input type="text" class="modal__login-main-input" placeholder="VD: NguyenQuy123">
+                            <label for="" class="modal__login-main-lbl">Nhập mật khẩu</label>
+                            <input type="password" class="modal__login-main-input" placeholder="Mật khẩu của bạn">
+                            <div class="modal__login-main-sumbit">
+                                <span class="modal__login-main-return" onclick="removeModal()">Trở lại</span>
+                                <button class="btn">Đăng nhập</button>
+                            </div>
+                            
+                        </div>
+                        <div class="modal__login-footer">
+                            <a href="" class="modal__login-footer-link"><span class="modal__login-footer-fb"> <i class="fa-brands fa-facebook"></i> </span>Đăng nhập với facebook</a>
+                            <a href="" class="modal__login-footer-link"><span class="modal__login-footer-gg"><i class="fa-brands fa-google"></i></span> Đăng nhập với Google</a>
+                        </div>
+                    </form>
+                </div>
+                
+                
+            </div>
+        </div>
+           
+     </div> 
+    <script>
+        var quangCao = document.querySelector('.main-notification');
+        var outElement = document.querySelector('.main-notification-stop');
+        var modal = document.querySelector('.modal');
+        var modal__layer = document.querySelector('.modal__layer');
+        var modal__login = document.querySelector('.modal__login');
+        var modal__body = document.querySelector('.modal__body');
+
+        
+        // nút login ở thanh footer
+        var loginFooter = document.querySelector('#Login-1' );
+        loginFooter.addEventListener('click' , function(e) {
+            e.preventDefault();
+            return removeModal();
+            
+        });
+
+        var loginHeader = document.querySelector('#Login-2');
+        // nút login ở thanh header
+        loginHeader.addEventListener('click' , function(e) {
+            e.preventDefault();
+            return removeModal();
+            
+        });
+        // hàm bỏ hoặc thêm class remove cho modal
+        function removeModal() {
+            modal.classList.toggle('remove');
+            modal__layer.classList.toggle('remove');
+            modal__login.classList.toggle('remove');
+            modal__body.classList.toggle('remove');
+        }
+
+        function removeQQ() {
+            quangCao.classList.toggle('remove');
+        }
+
+        outElement.addEventListener('click', function(e) {
+            e.preventDefault();
+            return removeQQ();
+
+        });
+
+
+
+
+        var interval = (300 * 1000);
+        setInterval(() => {
+            quangCao.classList.toggle('remove');
+        }, interval);
+       
+           
+          
+    </script>
+</body>
+</html>
